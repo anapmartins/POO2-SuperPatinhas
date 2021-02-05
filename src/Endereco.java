@@ -7,6 +7,7 @@ public class Endereco {
     private String Estado;
     private String UF;
     private String CEP;
+    private String Complemento;
 
 
     public String getLogradouro() {
@@ -65,7 +66,13 @@ public class Endereco {
         this.CEP = CEP;
     }
 
+    public String getComplemento() {
+        return Complemento;
+    }
 
+    public void setComplemento(String complemento) {
+        Complemento = complemento;
+    }
 
 
 
