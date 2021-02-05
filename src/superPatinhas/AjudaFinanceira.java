@@ -1,4 +1,4 @@
-package superPatinhas.projetosuperpatinhas;
+package superPatinhas;
 import java.math.BigDecimal;
 
 /**
