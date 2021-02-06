@@ -5,7 +5,7 @@ package projetosuperpatinhas;
  *
  * @author carol
  */
-public class AnimalAdocao extends AnimalCatalogado{
+public class AnimalAdocao{
     private String linkRedeSocial;
     private String adotadoAnteriormente;
     private String ongPerternce;
@@ -33,13 +33,10 @@ public class AnimalAdocao extends AnimalCatalogado{
     public void setOngPerternce(String ongPerternce) {
         this.ongPerternce = ongPerternce;
     }
-
-    public AnimalAdocao(String linkRedeSocial, String adotadoAnteriormente, String ongPerternce, String descricoesFisicas, Integer foto, String nome, Integer vacinasTomadas, Integer idade) {
-        super(descricoesFisicas, foto, nome, vacinasTomadas, idade);
+    
+    public AnimalAdocao(String linkRedeSocial, String adotadoAnteriormente, String ongPerternce) {
         this.linkRedeSocial = linkRedeSocial;
         this.adotadoAnteriormente = adotadoAnteriormente;
         this.ongPerternce = ongPerternce;
     }
-    
-
 }
