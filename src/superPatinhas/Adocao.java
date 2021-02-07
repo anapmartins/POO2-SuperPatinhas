@@ -37,4 +37,5 @@ public class Adocao {
         this.estadoAdocao = estadoAdocao;
         this.animal = animal;
     }
+    
 }
