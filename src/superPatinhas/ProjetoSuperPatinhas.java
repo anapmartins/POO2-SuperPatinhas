@@ -5,17 +5,13 @@
  */
 package superPatinhas;
 
-/**
- *
- * @author carol
- */
 public class ProjetoSuperPatinhas {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+    	 DiretorAdocao iniciaAdocao = new DiretorAdocao(); 
+    	 Adocao adocao1 = iniciaAdocao.adotarAnimal("cpf", "Iniciada", "cachorro");                
+         
+         
     }
     
 }
