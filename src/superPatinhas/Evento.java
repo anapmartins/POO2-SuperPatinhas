@@ -5,10 +5,14 @@ import java.util.Date;
 public class Evento {
 
     private Date data;
-
     private String local;
-
     private String descricao;
+
+    public Evento() {
+        this.data = new Date();
+        this.local = "";
+        this.descricao = "";
+    }
 
     public Date getData() {
         return data;
@@ -30,13 +34,15 @@ public class Evento {
         return descricao;
     }
 
-    public void setDescricao(String descricao) {
+    public void setDescricao(String desc) {
         this.descricao = descricao;
     }
 
-    public Evento(Date data, String local, String descricao) {
-        this.data = data;
-        this.local = local;
-        this.descricao = descricao;
+    public void criaEvento(Date data, String local, String descricao){
+
+        setData(data);
+        setLocal(local);
+        setDescricao(descricao);
     }
+
 }
