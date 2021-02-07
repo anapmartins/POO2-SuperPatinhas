@@ -1,3 +1,5 @@
+package superPatinhas;
+
 public class Endereco {
 
     private String Logradouro;
