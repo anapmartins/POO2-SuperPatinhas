@@ -6,7 +6,8 @@ package superPatinhas;
  * @author carol
  */
 public class AnimalCatalogado {
-    
+
+    private Integer Id;
     private String descricoesFisicas;
     private Integer foto;
     private String nome;
@@ -14,6 +15,11 @@ public class AnimalCatalogado {
     private Integer idade;
     private AnimalAdocao adocao;
     private AnimalPerdido perdido;
+
+    public Integer getId() {return Id;}
+
+    public void setId(Integer id) {Id = id;}
+
 
     public AnimalAdocao getAdocao() {
         return adocao;
@@ -71,7 +77,15 @@ public class AnimalCatalogado {
         this.idade = idade;
     }
 
-    public AnimalCatalogado(String descricoesFisicas, Integer foto, String nome, Integer vacinasTomadas, Integer idade, AnimalAdocao adocao, AnimalPerdido perdido) {
+    public AnimalCatalogado(Integer id,
+                            String descricoesFisicas,
+                            Integer foto,
+                            String nome,
+                            Integer vacinasTomadas,
+                            Integer idade,
+                            AnimalAdocao adocao,
+                            AnimalPerdido perdido) {
+        this.Id = id;
         this.descricoesFisicas = descricoesFisicas;
         this.foto = foto;
         this.nome = nome;
