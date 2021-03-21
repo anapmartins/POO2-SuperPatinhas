@@ -22,7 +22,6 @@ public class AnimalCatalogadoDAO implements IAnimalCatalogadoDAO {
         return dbAnimalCatalogado.get(id);
     }
     public boolean Inserir(AnimalCatalogado animal){
-
         AnimalCatalogado exists = Buscar(animal.getId());
         if(exists != null)
         {
@@ -34,7 +33,6 @@ public class AnimalCatalogadoDAO implements IAnimalCatalogadoDAO {
         return true;
     }
     public boolean Alterar(int id, AnimalCatalogado animal){
-
         AnimalCatalogado ret = dbAnimalCatalogado.get(id);
         if(ret == null)
         {
@@ -43,7 +41,6 @@ public class AnimalCatalogadoDAO implements IAnimalCatalogadoDAO {
         animal.setId(id);
         dbAnimalCatalogado.remove(id);
         dbAnimalCatalogado.put (id, animal);
-
         return true;
     };
     public boolean Excluir(int id){
@@ -53,7 +50,6 @@ public class AnimalCatalogadoDAO implements IAnimalCatalogadoDAO {
             return false;
         }
         dbAnimalCatalogado.remove(id);
-
         return true;
     }
 }

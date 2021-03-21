@@ -48,9 +48,5 @@ public class ProjetoSuperPatinhas {
         catalogadoDAO.Excluir(animal6.getId());
 
         System.out.println(catalogadoDAO.dbAnimalCatalogado);
-
-
-
-
     }
 }

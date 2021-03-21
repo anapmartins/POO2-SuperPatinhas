@@ -11,6 +11,4 @@ public interface IAnimalCatalogadoDAO {
     boolean Alterar(int id, AnimalCatalogado animal);
 
     boolean Excluir(int id);
-
-
 }
