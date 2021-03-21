@@ -1,4 +1,4 @@
-package superPatinhas.builder;
+package superPatinhas;
 
 public class Ong {
 

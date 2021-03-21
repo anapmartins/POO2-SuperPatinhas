@@ -1,5 +1,5 @@
 
-package superPatinhas.builder;
+package superPatinhas;
 
 /**
  *
