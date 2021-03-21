@@ -27,15 +27,20 @@ public class ProjetoSuperPatinhas {
         AnimalCatalogado animal8 = new AnimalCatalogado("teste", 1, "teste8", 1, 12, animal1, animal2);
         AnimalCatalogado animal9 = new AnimalCatalogado("teste", 1, "teste9", 1, 12, animal1, animal2);
 
+        System.out.println(catalogadoDAO.dbAnimalCatalogado);
+
         catalogadoDAO.Inserir(animal3);
         catalogadoDAO.Inserir(animal4);
         catalogadoDAO.Inserir(animal5);
         catalogadoDAO.Inserir(animal6);
 
+        System.out.println(catalogadoDAO.dbAnimalCatalogado);
+
         catalogadoDAO.Alterar(animal4.getId(),animal7);
         catalogadoDAO.Alterar(animal5.getId(),animal8);
         catalogadoDAO.Alterar(animal6.getId(),animal9);
 
+        System.out.println(catalogadoDAO.dbAnimalCatalogado);
 
         catalogadoDAO.Excluir(animal3.getId());
         catalogadoDAO.Excluir(animal4.getId());
