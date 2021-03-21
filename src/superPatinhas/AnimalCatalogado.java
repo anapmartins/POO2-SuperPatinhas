@@ -7,7 +7,7 @@ package superPatinhas;
  */
 public class AnimalCatalogado {
 
-    private Integer Id;
+    private Integer Id = -1;
     private String descricoesFisicas;
     private Integer foto;
     private String nome;
@@ -77,15 +77,13 @@ public class AnimalCatalogado {
         this.idade = idade;
     }
 
-    public AnimalCatalogado(Integer id,
-                            String descricoesFisicas,
+    public AnimalCatalogado(String descricoesFisicas,
                             Integer foto,
                             String nome,
                             Integer vacinasTomadas,
                             Integer idade,
                             AnimalAdocao adocao,
                             AnimalPerdido perdido) {
-        this.Id = id;
         this.descricoesFisicas = descricoesFisicas;
         this.foto = foto;
         this.nome = nome;
