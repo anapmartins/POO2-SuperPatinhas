@@ -4,7 +4,9 @@ package superPatinhas.builder;
 import superPatinhas.Adocao;
 
 public class AdocaoBuilder {
-	Adocao adocao;
+
+    private Adocao adocao;
+
 	public AdocaoBuilder(Adocao adocao) {
 		this.adocao = adocao;
 	}

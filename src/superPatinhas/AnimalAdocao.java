@@ -6,6 +6,7 @@ package superPatinhas;
  * @author carol
  */
 public class AnimalAdocao{
+
     private String linkRedeSocial;
     private String adotadoAnteriormente;
     private String ongPerternce;
@@ -34,7 +35,7 @@ public class AnimalAdocao{
         this.ongPerternce = ongPerternce;
     }
     
-    public AnimalAdocao(String linkRedeSocial, String adotadoAnteriormente, String ongPerternce) {
+    public void AnimalAdocao(String linkRedeSocial, String adotadoAnteriormente, String ongPerternce) {
         this.linkRedeSocial = linkRedeSocial;
         this.adotadoAnteriormente = adotadoAnteriormente;
         this.ongPerternce = ongPerternce;

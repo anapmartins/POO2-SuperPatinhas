@@ -4,6 +4,7 @@ import superPatinhas.observer.AdocaoObserver;
 import superPatinhas.observer.Notificacao;
 import superPatinhas.observer.Observable;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Evento implements AdocaoObserver {
@@ -56,6 +57,8 @@ public class Evento implements AdocaoObserver {
 
         if(!notifica.getMensagem().equals("")) {
             System.out.println(notifica.getMensagem());
+            System.out.println("Local: " + local);
+            System.out.println("Data: " + new SimpleDateFormat("dd/MM/yyyy").format(data));
         }
         else {
             System.out.println("Sem mensagens novas!");

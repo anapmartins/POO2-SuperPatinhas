@@ -11,7 +11,6 @@ public class Endereco {
     private String CEP;
     private String Complemento;
 
-
     public String getLogradouro() {
         return Logradouro;
     }
@@ -75,7 +74,4 @@ public class Endereco {
     public void setComplemento(String complemento) {
         Complemento = complemento;
     }
-
-
-
 }

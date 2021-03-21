@@ -6,9 +6,10 @@ import java.math.BigDecimal;
  * @author carol
  */
 public class AjudaFinanceira {
+
     private BigDecimal quantidade;
 
-    public AjudaFinanceira(BigDecimal quantidade) {
+    public void AjudaFinanceira(BigDecimal quantidade) {
         this.quantidade = quantidade;
     }
 
