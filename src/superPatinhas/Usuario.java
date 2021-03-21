@@ -1,6 +1,7 @@
-package superPatinhas.builder;
+package superPatinhas;
 
 import superPatinhas.observer.AdocaoObserver;
+import superPatinhas.observer.Notificacao;
 import superPatinhas.observer.Observable;
 
 public class Usuario implements AdocaoObserver {
@@ -78,10 +79,10 @@ public class Usuario implements AdocaoObserver {
     @Override
     public void update(Observable observable) {
 
-        Notificacao notifica = (Noficacao) observable;
+        Notificacao notifica = (Notificacao) observable;
 
         if(!notifica.getMensagem().equals("")) {
-            System.out.println(email.toString() + ": " + caixa.getMensagem());
+            System.out.println(email.toString() + ": " + notifica.getMensagem());
         }
         else {
             System.out.println(email.toString() + ": Sem mensagens novas!");
