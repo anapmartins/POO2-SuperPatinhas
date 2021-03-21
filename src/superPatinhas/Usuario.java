@@ -2,6 +2,7 @@ package superPatinhas;
 
 import superPatinhas.observer.AdocaoObserver;
 import superPatinhas.observer.Inscrito;
+import superPatinhas.observer.Notificacao;
 import superPatinhas.observer.Observable;
 
 public class Usuario implements AdocaoObserver {

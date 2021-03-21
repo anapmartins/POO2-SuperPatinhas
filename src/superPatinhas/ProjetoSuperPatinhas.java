@@ -7,6 +7,7 @@ package superPatinhas;
 
 import superPatinhas.builder.AdocaoDirector;
 import superPatinhas.observer.Inscrito;
+import superPatinhas.observer.Notificacao;
 
 public class ProjetoSuperPatinhas {
 
@@ -31,7 +32,7 @@ public class ProjetoSuperPatinhas {
 
         System.out.println();
 
-        monitor.setMensagem("Venha adotar um caozinho!");
+        monitor.setNovaMensagem("Venha adotar um caozinho!");
     }
     
 }
