@@ -1,4 +1,4 @@
-package superPatinhas;
+package superPatinhas.builder;
 
 import java.util.Date;
 

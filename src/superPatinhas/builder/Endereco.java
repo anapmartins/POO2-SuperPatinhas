@@ -1,4 +1,4 @@
-package superPatinhas;
+package superPatinhas.builder;
 
 public class Endereco {
 

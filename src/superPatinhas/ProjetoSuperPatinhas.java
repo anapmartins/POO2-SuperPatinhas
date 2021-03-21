@@ -5,11 +5,13 @@
  */
 package superPatinhas;
 
+import superPatinhas.builder.AdocaoDirector;
+
 public class ProjetoSuperPatinhas {
 
     public static void main(String[] args) {
-    	 DiretorAdocao iniciaAdocao = new DiretorAdocao(); 
-    	 Adocao adocao1 = iniciaAdocao.adotarAnimal("cpf", "Iniciada", "cachorro");                
+    	 AdocaoDirector iniciaAdocao = new AdocaoDirector();
+    	 Adocao adocao1 = iniciaAdocao.adotarAnimal("cpf", "Iniciada", "cachorro");
          
          
     }

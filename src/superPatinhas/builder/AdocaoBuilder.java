@@ -1,7 +1,9 @@
-package superPatinhas;
+package superPatinhas.builder;
 
-	
-public class AdocaoBuilder {   
+
+import superPatinhas.Adocao;
+
+public class AdocaoBuilder {
 	Adocao adocao;
 	public AdocaoBuilder(Adocao adocao) {
 		this.adocao = adocao;
