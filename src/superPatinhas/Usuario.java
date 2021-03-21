@@ -8,17 +8,11 @@ import superPatinhas.observer.Observable;
 public class Usuario implements AdocaoObserver {
 
     private String nome;
-
     private String endereco;
-
     private String telefone;
-
     private String email;
-
     private String senha;
-
     private String cpf;
-
     private Inscrito tipoInscricao;
 
     public Inscrito getTipoInscricao() {
