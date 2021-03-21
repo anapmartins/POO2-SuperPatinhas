@@ -1,5 +1,8 @@
 
-package superPatinhas.builder;
+package superPatinhas;
+
+import superPatinhas.AnimalAdocao;
+import superPatinhas.AnimalPerdido;
 
 /**
  *

@@ -1,22 +1,27 @@
 package superPatinhas;
 
 import superPatinhas.observer.AdocaoObserver;
+import superPatinhas.observer.Inscrito;
 import superPatinhas.observer.Notificacao;
 import superPatinhas.observer.Observable;
 
 public class Usuario implements AdocaoObserver {
 
     private String nome;
-
     private String endereco;
-
     private String telefone;
-
     private String email;
-
     private String senha;
-
     private String cpf;
+    private Inscrito tipoInscricao;
+
+    public Inscrito getTipoInscricao() {
+        return tipoInscricao;
+    }
+
+    public void setTipoInscricao(Inscrito tipoInscricao) {
+        this.tipoInscricao = tipoInscricao;
+    }
 
     public String getNome() {
         return nome;
@@ -66,13 +71,14 @@ public class Usuario implements AdocaoObserver {
         this.cpf = cpf;
     }
 
-    public Usuario(String nome, String endereco, String telefone, String email, String senha, String cpf) {
+    public Usuario(String nome, String endereco, String telefone, String email, String senha, String cpf, Inscrito tipoInscricao) {
         this.nome = nome;
         this.endereco = endereco;
         this.telefone = telefone;
         this.email = email;
         this.senha = senha;
         this.cpf = cpf;
+        this.tipoInscricao = tipoInscricao;
     }
 
 
@@ -81,11 +87,25 @@ public class Usuario implements AdocaoObserver {
 
         Notificacao notifica = (Notificacao) observable;
 
-        if(!notifica.getMensagem().equals("")) {
-            System.out.println(email.toString() + ": " + notifica.getMensagem());
-        }
-        else {
-            System.out.println(email.toString() + ": Sem mensagens novas!");
+        if(tipoInscricao != null) {
+            switch (tipoInscricao) {
+                case EMAIL:
+                    if (!notifica.getMensagem().equals("")) {
+                        System.out.println(email.toString() + ": " + notifica.getMensagem());
+                    } else {
+                        System.out.println(email.toString() + ": Sem mensagens novas!");
+                    }
+                    break;
+                case TELEFONE:
+                    if (!notifica.getMensagem().equals("")) {
+                        System.out.println(telefone.toString() + ": " + notifica.getMensagem());
+                    } else {
+                        System.out.println(telefone.toString() + ": Sem mensagens novas!");
+                    }
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }

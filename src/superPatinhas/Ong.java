@@ -1,4 +1,6 @@
-package superPatinhas.builder;
+package superPatinhas;
+
+import superPatinhas.Endereco;
 
 public class Ong {
 

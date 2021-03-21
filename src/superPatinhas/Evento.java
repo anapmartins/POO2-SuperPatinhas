@@ -1,8 +1,12 @@
-package superPatinhas.builder;
+package superPatinhas;
+
+import superPatinhas.observer.AdocaoObserver;
+import superPatinhas.observer.Notificacao;
+import superPatinhas.observer.Observable;
 
 import java.util.Date;
 
-public class Evento {
+public class Evento implements AdocaoObserver {
 
     private Date data;
     private String local;
@@ -45,4 +49,17 @@ public class Evento {
         setDescricao(descricao);
     }
 
+    @Override
+    public void update(Observable observable) {
+
+        Notificacao notifica = (Notificacao) observable;
+
+        if(!notifica.getMensagem().equals("")) {
+            System.out.println(notifica.getMensagem());
+        }
+        else {
+            System.out.println("Sem mensagens novas!");
+        }
+    }
 }
+
