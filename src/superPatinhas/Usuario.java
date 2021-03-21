@@ -93,25 +93,25 @@ public class Usuario implements AdocaoObserver {
 
         Notificacao notifica = (Notificacao) observable;
 
-        switch (tipoInscricao) {
-            case EMAIL:
-                if(!notifica.getMensagem().equals("")) {
-                    System.out.println(email.toString() + ": " + notifica.getMensagem());
-                }
-                else {
-                    System.out.println(email.toString() + ": Sem mensagens novas!");
-                }
-                break;
-            case TELEFONE:
-                if(!notifica.getMensagem().equals("")) {
-                    System.out.println(telefone.toString() + ": " + notifica.getMensagem());
-                }
-                else {
-                    System.out.println(telefone.toString() + ": Sem mensagens novas!");
-                }
-                break;
-            default:
-                break;
+        if(tipoInscricao != null) {
+            switch (tipoInscricao) {
+                case EMAIL:
+                    if (!notifica.getMensagem().equals("")) {
+                        System.out.println(email.toString() + ": " + notifica.getMensagem());
+                    } else {
+                        System.out.println(email.toString() + ": Sem mensagens novas!");
+                    }
+                    break;
+                case TELEFONE:
+                    if (!notifica.getMensagem().equals("")) {
+                        System.out.println(telefone.toString() + ": " + notifica.getMensagem());
+                    } else {
+                        System.out.println(telefone.toString() + ": Sem mensagens novas!");
+                    }
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }

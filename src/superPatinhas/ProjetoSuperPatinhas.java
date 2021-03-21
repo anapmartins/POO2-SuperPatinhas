@@ -25,6 +25,7 @@ public class ProjetoSuperPatinhas {
         Usuario teste3 = new Usuario("Pedro", "Rua do Teste 3", "99900-3333", "emaildopedro@email.com", "123", "123.123.123-14", null);
 
         monitor.addObserver(teste);
+        monitor.addObserver(teste2);
 
         teste.update(monitor);
         teste2.update(monitor);
