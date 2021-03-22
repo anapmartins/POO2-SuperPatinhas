@@ -1,6 +1,7 @@
 package superPatinhas;
 
 public class Usuario {
+    private Integer Id = -1;
 
     private String nome;
 
@@ -61,6 +62,10 @@ public class Usuario {
     public void setCpf(String cpf) {
         this.cpf = cpf;
     }
+
+    public Integer getId() {return Id;}
+
+    public void setId(Integer id) {this.Id = id;}
 
     public Usuario(String nome, String endereco, String telefone, String email, String senha, String cpf) {
         this.nome = nome;

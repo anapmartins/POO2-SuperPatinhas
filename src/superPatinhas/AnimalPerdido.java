@@ -6,8 +6,13 @@ package superPatinhas;
  * @author carol
  */
 public class AnimalPerdido{
+    private Integer Id = -1;
     
     private String localVisto;
+
+    public Integer getId() {return Id;}
+
+    public void setId(Integer id) {this.Id = id;}
 
     public String getLocalVisto() {
         return localVisto;

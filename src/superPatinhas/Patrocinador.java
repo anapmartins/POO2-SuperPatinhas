@@ -1,6 +1,7 @@
 package superPatinhas;
 
 public class Patrocinador {
+    private Integer Id = -1;
 
     private Enums.TiposPatrocinador tipo;
     private String nome;
@@ -38,6 +39,10 @@ public class Patrocinador {
     public void setCnpj(String cnpj) {
         this.cnpj = cnpj;
     }
+
+    public Integer getId() {return Id;}
+
+    public void setId(Integer id) {this.Id = id;}
 
 
 

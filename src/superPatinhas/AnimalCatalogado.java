@@ -18,7 +18,7 @@ public class AnimalCatalogado {
 
     public Integer getId() {return Id;}
 
-    public void setId(Integer id) {Id = id;}
+    public void setId(Integer id) {this.Id = id;}
 
 
     public AnimalAdocao getAdocao() {

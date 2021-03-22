@@ -6,9 +6,14 @@ package superPatinhas;
  * @author carol
  */
 public class AnimalAdocao{
+    private Integer Id = -1;
     private String linkRedeSocial;
     private String adotadoAnteriormente;
     private String ongPerternce;
+
+    public Integer getId() {return Id;}
+
+    public void setId(Integer id) {this.Id = id;}
 
     public String getLinkRedeSocial() {
         return linkRedeSocial;

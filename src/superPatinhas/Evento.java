@@ -3,6 +3,7 @@ package superPatinhas;
 import java.util.Date;
 
 public class Evento {
+    private Integer Id = -1;
 
     private Date data;
     private String local;
@@ -37,6 +38,10 @@ public class Evento {
     public void setDescricao(String desc) {
         this.descricao = descricao;
     }
+
+    public Integer getId() {return Id;}
+
+    public void setId(Integer id) {this.Id = id;}
 
     public void criaEvento(Date data, String local, String descricao){
 

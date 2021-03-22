@@ -1,12 +1,17 @@
 package superPatinhas;
 
 public class Adocao {
-
+    private Integer Id = -1;
     private String documentosExigidos;
 
     private String estadoAdocao;
 
     private String animal;
+
+
+    public Integer getId() {return Id;}
+
+    public void setId(Integer id) {this.Id = id;}
 
     public String getDocumentosExigidos() {
         return documentosExigidos;

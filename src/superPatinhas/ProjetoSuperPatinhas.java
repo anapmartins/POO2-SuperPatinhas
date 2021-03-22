@@ -12,13 +12,25 @@ public class ProjetoSuperPatinhas {
     public static void main(String[] args) {
         DiretorAdocao iniciaAdocao = new DiretorAdocao();
         AnimalCatalogadoDAO catalogadoDAO = new AnimalCatalogadoDAO();
-
+        //UsuarioDAO usuarioDAOAO = new UsuarioDAO();
 
         Adocao adocao1 = iniciaAdocao.adotarAnimal("cpf", "Iniciada", "cachorro");
         Usuario user1 = new Usuario("teste", "teste", "teste", "teste", "teste", "teste");
+
+        testeAnimalCatalogadoDAO(catalogadoDAO);
+    }
+
+
+    //public static void testeUsuarioDAO(AnimalCatalogadoDAO catalogadoDAO)
+
+
+
+
+
+    public static void testeAnimalCatalogadoDAO(AnimalCatalogadoDAO catalogadoDAO)
+    {
         AnimalAdocao animal1 = new AnimalAdocao("teste", "teste", "teste");
         AnimalPerdido animal2 = new AnimalPerdido("teste");
-
         AnimalCatalogado animal3 = new AnimalCatalogado("teste", 1, "teste3", 1, 12, animal1, animal2);
         AnimalCatalogado animal4 = new AnimalCatalogado("teste", 1, "teste4", 1, 12, animal1, animal2);
         AnimalCatalogado animal5 = new AnimalCatalogado("teste", 1, "teste5", 1, 12, animal1, animal2);
@@ -49,4 +61,5 @@ public class ProjetoSuperPatinhas {
 
         System.out.println(catalogadoDAO.dbAnimalCatalogado);
     }
+
 }

@@ -1,6 +1,7 @@
 package superPatinhas;
 
 public class Ong {
+    private Integer Id = -1;
 
     private String nome;
     private String cnpj;
@@ -56,4 +57,8 @@ public class Ong {
     public void setSenha(String senha) {
         this.senha = senha;
     }
+
+    public Integer getId() {return Id;}
+
+    public void setId(Integer id) {this.Id = id;}
 }
