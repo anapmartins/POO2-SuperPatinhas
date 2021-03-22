@@ -18,7 +18,7 @@ import java.util.concurrent.ThreadLocalRandom;
 public class ProjetoSuperPatinhas {
 
     public static void main(String[] args) throws FileNotFoundException {
-        PrintStream o = new PrintStream(new File("Logtxt"));
+        PrintStream o = new PrintStream(new File("Log.txt"));
         System.setOut(o);
         //Instancias DAOs
         AnimalCatalogadoDAO catalogadoDAO = new AnimalCatalogadoDAO();
