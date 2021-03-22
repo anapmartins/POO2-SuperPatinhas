@@ -44,7 +44,13 @@ public class Patrocinador {
 
     public void setId(Integer id) {this.Id = id;}
 
+    public Patrocinador(String nome, String cpf, String cnpj)
+    {
+        this.nome = nome;
+        this.cpf = cpf;
+        this.cnpj = cnpj;
 
+    }
 
 
 }

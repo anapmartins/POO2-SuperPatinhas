@@ -9,10 +9,10 @@ public class Evento {
     private String local;
     private String descricao;
 
-    public Evento() {
-        this.data = new Date();
-        this.local = "";
-        this.descricao = "";
+    public Evento(Date data, String local, String descricao) {
+        this.data = data;
+        this.local = local;
+        this.descricao = descricao;
     }
 
     public Date getData() {
@@ -43,11 +43,11 @@ public class Evento {
 
     public void setId(Integer id) {this.Id = id;}
 
-    public void criaEvento(Date data, String local, String descricao){
+    /*public void criaEvento(Date data, String local, String descricao){
 
         setData(data);
         setLocal(local);
         setDescricao(descricao);
-    }
+    }*/
 
 }

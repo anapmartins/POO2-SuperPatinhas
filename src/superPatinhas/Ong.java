@@ -61,4 +61,12 @@ public class Ong {
     public Integer getId() {return Id;}
 
     public void setId(Integer id) {this.Id = id;}
+
+    public Ong(String nome, String email, String senha){
+        this.nome = nome;
+        this.email = email;
+        this.senha = senha;
+
+
+    }
 }
