@@ -1,10 +1,6 @@
 
 package superPatinhas;
 
-/**
- *
- * @author carol
- */
 public class AnimalPerdido{
     
     private String localVisto;
