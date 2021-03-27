@@ -5,12 +5,12 @@ import java.util.Date;
 public class Evento {
 
     private Date data;
-    private String local;
+    private Endereco local;
     private String descricao;
 
     public Evento() {
         this.data = new Date();
-        this.local = "";
+        this.local = new Endereco();
         this.descricao = "";
     }
 
@@ -22,11 +22,11 @@ public class Evento {
         this.data = data;
     }
 
-    public String getLocal() {
+    public Endereco getLocal() {
         return local;
     }
 
-    public void setLocal(String local) {
+    public void setLocal(Endereco local) {
         this.local = local;
     }
 
@@ -38,7 +38,7 @@ public class Evento {
         this.descricao = descricao;
     }
 
-    public void criaEvento(Date data, String local, String descricao){
+    public void criaEvento(Date data, Endereco local, String descricao){
 
         setData(data);
         setLocal(local);
