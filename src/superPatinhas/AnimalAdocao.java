@@ -6,6 +6,7 @@ package superPatinhas;
  * @author carol
  */
 public class AnimalAdocao{
+
     private String linkRedeSocial;
     private String adotadoAnteriormente;
     private String ongPerternce;

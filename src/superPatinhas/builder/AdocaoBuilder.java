@@ -1,4 +1,11 @@
-package superPatinhas;
+package superPatinhas.builder;
+
+
+import superPatinhas.Adocao;
+
+public class AdocaoBuilder {
+
+    private Adocao adocao;
 
 	
 public class AdocaoBuilder {   
@@ -28,8 +35,4 @@ public class AdocaoBuilder {
     public void animalEscolhido(String animal){
        this.adocao.setAnimal(animal);       
     }
-    
 }
-
-
-
