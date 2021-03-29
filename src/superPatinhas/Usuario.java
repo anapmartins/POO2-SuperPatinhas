@@ -1,20 +1,28 @@
 package superPatinhas;
 
-public class Usuario {
+import superPatinhas.observer.AdocaoObserver;
+import superPatinhas.observer.Inscrito;
+import superPatinhas.observer.Notificacao;
+import superPatinhas.observer.Observable;
 
-    private String nome;
+public class Usuario implements AdocaoObserver {
 
     private Endereco endereco;
-
+    private String nome;
     private String telefone;
-
     private String email;
-
     private String senha;
-
     private String cpf;
-    
     private int idade;
+    private Inscrito tipoInscricao;
+
+    public Inscrito getTipoInscricao() {
+        return tipoInscricao;
+    }
+
+    public void setTipoInscricao(Inscrito tipoInscricao) {
+        this.tipoInscricao = tipoInscricao;
+    }
 
     public String getNome() {
         return nome;
@@ -73,7 +81,7 @@ public class Usuario {
     }
 
 
-    public Usuario(String nome, Endereco endereco, String telefone, String email, String senha, String cpf, int idade) {
+    public Usuario(String nome, Endereco endereco, String telefone, String email, String senha, String cpf, int idade, Inscrito tipoInscricao) {
         this.nome = nome;
         this.endereco = endereco;
         this.telefone = telefone;
@@ -81,5 +89,34 @@ public class Usuario {
         this.senha = senha;
         this.cpf = cpf;
         this.idade = idade;
+        this.tipoInscricao = tipoInscricao;
+    }
+
+
+    @Override
+    public void update(Observable observable) {
+
+        Notificacao notifica = (Notificacao) observable;
+
+        if(tipoInscricao != null) {
+            switch (tipoInscricao) {
+                case EMAIL:
+                    if (!notifica.getMensagem().equals("")) {
+                        System.out.println(email.toString() + ": " + notifica.getMensagem());
+                    } else {
+                        System.out.println(email.toString() + ": Sem mensagens novas!");
+                    }
+                    break;
+                case TELEFONE:
+                    if (!notifica.getMensagem().equals("")) {
+                        System.out.println(telefone.toString() + ": " + notifica.getMensagem());
+                    } else {
+                        System.out.println(telefone.toString() + ": Sem mensagens novas!");
+                    }
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 }

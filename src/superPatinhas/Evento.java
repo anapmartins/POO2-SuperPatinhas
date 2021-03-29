@@ -44,5 +44,4 @@ public class Evento {
         setLocal(local);
         setDescricao(descricao);
     }
-
 }
