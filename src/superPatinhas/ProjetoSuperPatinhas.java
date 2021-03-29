@@ -14,15 +14,15 @@ public class ProjetoSuperPatinhas {
     public static void main(String[] args) {
 
         //Builder
-    	 AdocaoDirector iniciaAdocao = new AdocaoDirector();
-    	 Adocao adocao1 = iniciaAdocao.adotarAnimal("cpf", "Iniciada", "cachorro");
+/*    	 AdocaoDirector iniciaAdocao = new AdocaoDirector();
+    	 Adocao adocao1 = iniciaAdocao.adotarAnimal("cpf", "Iniciada", "cachorro");*/
 
     	 //Observer
         Notificacao monitor = new Notificacao();
 
-        Usuario teste = new Usuario("Joao", "Rua do Teste", "99900-1111", "emaildojoao@email.com", "123", "123.123.123-12", Inscrito.EMAIL);
-        Usuario teste2 = new Usuario("Maria", "Rua do Teste 2", "99900-2222", "emaildamaria@email.com", "123", "123.123.123-13", Inscrito.TELEFONE);
-        Usuario teste3 = new Usuario("Pedro", "Rua do Teste 3", "99900-3333", "emaildopedro@email.com", "123", "123.123.123-14", null);
+        Usuario teste = new Usuario("Joao", new Endereco(), "99900-1111", "emaildojoao@email.com", "123", "123.123.123-12", 18, Inscrito.EMAIL);
+        Usuario teste2 = new Usuario("Maria", new Endereco(), "99900-2222", "emaildamaria@email.com", "123", "123.123.123-13", 21, Inscrito.TELEFONE);
+        Usuario teste3 = new Usuario("Pedro", new Endereco(), "99900-3333", "emaildopedro@email.com", "123", "123.123.123-14", 25,null);
 
         monitor.addObserver(teste);
         monitor.addObserver(teste2);
