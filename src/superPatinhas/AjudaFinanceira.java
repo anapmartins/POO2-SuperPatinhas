@@ -1,10 +1,6 @@
 package superPatinhas;
 import java.math.BigDecimal;
 
-/**
- *
- * @author carol
- */
 public class AjudaFinanceira {
     private Integer Id = -1;
     private BigDecimal quantidade;
