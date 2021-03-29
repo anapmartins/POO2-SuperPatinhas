@@ -1,6 +1,7 @@
 package superPatinhas;
 
 public class Usuario {
+    private Integer Id = -1;
 
     private String nome;
 
@@ -71,6 +72,10 @@ public class Usuario {
     public void setIdade(int idade) {
         this.idade = idade;
     }
+
+    public Integer getId() {return Id;}
+
+    public void setId(Integer id) {this.Id = id;}
 
 
     public Usuario(String nome, Endereco endereco, String telefone, String email, String senha, String cpf, int idade) {
