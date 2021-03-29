@@ -20,6 +20,7 @@ public class ProjetoSuperPatinhas {
     public static void main(String[] args) throws FileNotFoundException {
         PrintStream o = new PrintStream(new File("Log.txt"));
         System.setOut(o);
+
         //Instancias DAOs
         AnimalCatalogadoDAO catalogadoDAO = new AnimalCatalogadoDAO();
         UsuarioDAO usuarioDAO = new UsuarioDAO();
@@ -30,6 +31,7 @@ public class ProjetoSuperPatinhas {
         EventoDAO eventoDAO = new EventoDAO();
         OngDAO ongDAO = new OngDAO();
         PatrocinadorDAO patrocinadorDAO = new PatrocinadorDAO();
+
         //Testes DAO
         TesteAdocaoDAO(adocaoDAO);
         TesteAjudaFinanceiraDAO(ajudaFinanceiraDAO);
@@ -53,6 +55,13 @@ public class ProjetoSuperPatinhas {
 
 
     public static void TesteAdocaoDAO(AdocaoDAO adocaoDAO){
+        /*
+        https://github.com/felipefo/poo2/tree/master/Padroes_de_Projeto/DAO/HibernateDAO/src/main/java/example/hibernate/persistencia
+        https://github.com/felipefo/poo2/blob/master/Padroes_de_Projeto/DAO/HibernateDAO/src/main/java/example/hibernate/persistencia/GenericDAOImpl.java
+
+        */
+
+
         StackTraceElement[] stackTraceElements = Thread.currentThread().getStackTrace();
         String methodName =stackTraceElements[1].getMethodName();
         Logger(1,methodName);
