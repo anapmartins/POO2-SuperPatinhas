@@ -1,6 +1,8 @@
 package superPatinhas;
 
-public class Ong {
+import superPatinhas.DAOs.Entity;
+
+public class Ong extends Entity {
 
     private String nome;
     private String cnpj;
@@ -54,6 +56,12 @@ public class Ong {
     }
 
     public void setSenha(String senha) {
+        this.senha = senha;
+    }
+
+    public Ong(String nome, String email, String senha){
+        this.nome = nome;
+        this.email = email;
         this.senha = senha;
     }
 }

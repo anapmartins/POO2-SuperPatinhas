@@ -1,11 +1,13 @@
 package superPatinhas;
 
+import superPatinhas.DAOs.Entity;
 import superPatinhas.observer.AdocaoObserver;
 import superPatinhas.observer.Inscrito;
 import superPatinhas.observer.Notificacao;
 import superPatinhas.observer.Observable;
 
-public class Usuario implements AdocaoObserver {
+public class Usuario extends Entity implements AdocaoObserver {
+
 
     private Endereco endereco;
     private String nome;

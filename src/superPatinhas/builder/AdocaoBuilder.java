@@ -1,6 +1,6 @@
 package superPatinhas.builder;
 
-import superPatinhas.Adocao;
+import superPatinhas.*;
 
 public class AdocaoBuilder {
 

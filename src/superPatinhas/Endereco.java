@@ -74,4 +74,9 @@ public class Endereco {
     public void setComplemento(String complemento) {
         Complemento = complemento;
     }
+
+    public Endereco(int numero, String cep){
+        this.Numero = numero;
+        this.CEP = cep;
+    }
 }

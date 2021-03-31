@@ -1,18 +1,15 @@
 package superPatinhas;
 
+import superPatinhas.DAOs.Entity;
+
 import java.util.Date;
 
-public class Evento {
+public class Evento  extends Entity {
 
+    private Integer Id = -1;
     private Date data;
     private Endereco local;
     private String descricao;
-
-    public Evento() {
-        this.data = new Date();
-        this.local = new Endereco();
-        this.descricao = "";
-    }
 
     public Date getData() {
         return data;
@@ -38,10 +35,9 @@ public class Evento {
         this.descricao = descricao;
     }
 
-    public void criaEvento(Date data, Endereco local, String descricao){
-
-        setData(data);
-        setLocal(local);
-        setDescricao(descricao);
+    public Evento(Date data, Endereco local, String descricao) {
+        this.data = data;
+        this.local = local;
+        this.descricao = descricao;
     }
 }
