@@ -7,6 +7,7 @@ import superPatinhas.observer.Observable;
 
 public class Usuario implements AdocaoObserver {
 
+    private Integer Id = -1;
     private Endereco endereco;
     private String nome;
     private String telefone;
@@ -80,6 +81,9 @@ public class Usuario implements AdocaoObserver {
         this.idade = idade;
     }
 
+    public Integer getId() {return Id;}
+
+    public void setId(Integer id) {this.Id = id;}
 
     public Usuario(String nome, Endereco endereco, String telefone, String email, String senha, String cpf, int idade, Inscrito tipoInscricao) {
         this.nome = nome;
