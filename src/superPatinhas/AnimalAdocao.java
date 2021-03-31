@@ -6,14 +6,11 @@ package superPatinhas;
  * @author carol
  */
 public class AnimalAdocao{
-    private Integer Id = -1;
+
     private String linkRedeSocial;
     private String adotadoAnteriormente;
     private String ongPerternce;
-
-    public Integer getId() {return Id;}
-
-    public void setId(Integer id) {this.Id = id;}
+    private String porte;
 
     public String getLinkRedeSocial() {
         return linkRedeSocial;
@@ -39,9 +36,17 @@ public class AnimalAdocao{
         this.ongPerternce = ongPerternce;
     }
     
-    public AnimalAdocao(String linkRedeSocial, String adotadoAnteriormente, String ongPerternce) {
+    public void setPorte(String porte) {
+    	this.porte = porte;
+    }
+    
+    public String getPorte() {
+    	return porte;
+    }
+    public AnimalAdocao(String linkRedeSocial, String adotadoAnteriormente, String ongPerternce, String porte) {
         this.linkRedeSocial = linkRedeSocial;
         this.adotadoAnteriormente = adotadoAnteriormente;
         this.ongPerternce = ongPerternce;
+        this.porte = porte;
     }
 }
