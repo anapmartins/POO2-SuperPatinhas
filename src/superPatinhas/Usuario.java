@@ -1,10 +1,11 @@
 package superPatinhas;
 
 public class Usuario {
+    private Integer Id = -1;
 
     private String nome;
 
-    private Endereco endereco;
+    private String endereco;
 
     private String telefone;
 
@@ -13,8 +14,6 @@ public class Usuario {
     private String senha;
 
     private String cpf;
-    
-    private int idade;
 
     public String getNome() {
         return nome;
@@ -24,11 +23,11 @@ public class Usuario {
         this.nome = nome;
     }
 
-    public Endereco getEndereco() {
+    public String getEndereco() {
         return endereco;
     }
 
-    public void setEndereco(Endereco endereco) {
+    public void setEndereco(String endereco) {
         this.endereco = endereco;
     }
 
@@ -63,23 +62,17 @@ public class Usuario {
     public void setCpf(String cpf) {
         this.cpf = cpf;
     }
-    
-    public int getIdade() {
-        return idade;
-    }
 
-    public void setIdade(int idade) {
-        this.idade = idade;
-    }
+    public Integer getId() {return Id;}
 
+    public void setId(Integer id) {this.Id = id;}
 
-    public Usuario(String nome, Endereco endereco, String telefone, String email, String senha, String cpf, int idade) {
+    public Usuario(String nome, String endereco, String telefone, String email, String senha, String cpf) {
         this.nome = nome;
         this.endereco = endereco;
         this.telefone = telefone;
         this.email = email;
         this.senha = senha;
         this.cpf = cpf;
-        this.idade = idade;
     }
 }

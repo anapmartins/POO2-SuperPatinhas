@@ -10,7 +10,6 @@ public class AnimalAdocao{
     private String linkRedeSocial;
     private String adotadoAnteriormente;
     private String ongPerternce;
-    private String porte;
 
     public Integer getId() {return Id;}
 
@@ -40,17 +39,9 @@ public class AnimalAdocao{
         this.ongPerternce = ongPerternce;
     }
     
-    public void setPorte(String porte) {
-    	this.porte = porte;
-    }
-    
-    public String getPorte() {
-    	return porte;
-    }
-    public AnimalAdocao(String linkRedeSocial, String adotadoAnteriormente, String ongPerternce, String porte) {
+    public AnimalAdocao(String linkRedeSocial, String adotadoAnteriormente, String ongPerternce) {
         this.linkRedeSocial = linkRedeSocial;
         this.adotadoAnteriormente = adotadoAnteriormente;
         this.ongPerternce = ongPerternce;
-        this.porte = porte;
     }
 }

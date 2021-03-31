@@ -1,6 +1,10 @@
 
 package superPatinhas;
 
+/**
+ *
+ * @author carol
+ */
 public class AnimalPerdido{
     private Integer Id = -1;
     
