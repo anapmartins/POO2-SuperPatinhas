@@ -1,8 +1,11 @@
 
 package superPatinhas;
 
-public class AnimalPerdido{
-    
+import superPatinhas.DAOs.Entity;
+
+public class AnimalPerdido  extends Entity {
+
+    private Integer Id = -1;
     private String localVisto;
 
     public String getLocalVisto() {

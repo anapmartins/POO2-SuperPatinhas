@@ -1,16 +1,20 @@
 
 package superPatinhas;
 
+import superPatinhas.DAOs.Entity;
+
 /**
  *
  * @author carol
  */
-public class AnimalAdocao{
+public class AnimalAdocao extends Entity {
 
+    private Integer Id = -1;
     private String linkRedeSocial;
     private String adotadoAnteriormente;
     private String ongPerternce;
     private String porte;
+
 
     public String getLinkRedeSocial() {
         return linkRedeSocial;

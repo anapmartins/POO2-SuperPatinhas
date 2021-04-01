@@ -1,12 +1,14 @@
 
 package superPatinhas;
 
+import superPatinhas.DAOs.Entity;
+
 /**
  *
  * @author carol
  */
-public class AnimalCatalogado {
-    
+public class AnimalCatalogado  extends Entity {
+
     private String descricoesFisicas;
     private Integer foto;
     private String nome;
@@ -14,6 +16,7 @@ public class AnimalCatalogado {
     private Integer idade;
     private AnimalAdocao adocao;
     private AnimalPerdido perdido;
+
 
     public AnimalAdocao getAdocao() {
         return adocao;

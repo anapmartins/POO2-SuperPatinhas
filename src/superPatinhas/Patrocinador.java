@@ -1,11 +1,12 @@
 package superPatinhas;
 
-public class Patrocinador {
+import superPatinhas.DAOs.Entity;
+
+public class Patrocinador  extends Entity {
 	
 	public enum TiposPatrocinador {
         CPF, CNPJ
     }
-
 
     private TiposPatrocinador tipo;
     private String nome;
@@ -41,6 +42,13 @@ public class Patrocinador {
     }
 
     public void setCnpj(String cnpj) {
+        this.cnpj = cnpj;
+    }
+
+    public Patrocinador(String nome, String cpf, String cnpj)
+    {
+        this.nome = nome;
+        this.cpf = cpf;
         this.cnpj = cnpj;
     }
 }
