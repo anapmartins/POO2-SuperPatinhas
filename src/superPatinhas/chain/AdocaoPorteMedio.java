@@ -1,4 +1,7 @@
-package superPatinhas;
+package superPatinhas.chain;
+
+import superPatinhas.AnimalAdocao;
+import superPatinhas.Usuario;
 
 public class AdocaoPorteMedio implements AdocaoHandler {
 	private AdocaoHandler nextHandler;
@@ -8,8 +11,8 @@ public class AdocaoPorteMedio implements AdocaoHandler {
 	}
 	
 	public void processaHandler(AnimalAdocao animal, Usuario usuario) {
-		if (usuario.getIdade() < 60 && usuario.getEndereco().getComplemento() == "Apartamento" && animal.getPorte() == "Médio"){
-			System.out.println("Animal disponível para adoção.");		
+		if (usuario.getIdade() < 60 && usuario.getEndereco().getComplemento() == "Apartamento" && animal.getPorte() == "Mï¿½dio"){
+			System.out.println("Animal disponï¿½vel para adoï¿½ï¿½o.");		
 		}
 		else {
 			nextHandler.processaHandler(animal, usuario);

@@ -1,6 +1,10 @@
 package superPatinhas.builder;
 
 import superPatinhas.*;
+import superPatinhas.chain.AdocaoHandler;
+import superPatinhas.chain.AdocaoPorteGrande;
+import superPatinhas.chain.AdocaoPorteMedio;
+import superPatinhas.chain.AdocaoPortePequeno;
 
 public class AdocaoBuilder {
 

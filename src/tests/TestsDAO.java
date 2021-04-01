@@ -1,4 +1,4 @@
-package Tests;
+package tests;
 
 import superPatinhas.DAOs.*;
 import superPatinhas.*;
