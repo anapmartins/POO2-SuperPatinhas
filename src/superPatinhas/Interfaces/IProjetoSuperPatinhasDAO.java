@@ -1,11 +1,13 @@
 package superPatinhas.Interfaces;
 
-public interface IProjetoSuperPatinhasDAO<T> {
-    T Buscar(int id);
+import superPatinhas.DAOs.Entity;
 
-    boolean Inserir(T animal);
+public interface IProjetoSuperPatinhasDAO {
+    Entity Buscar(int id);
 
-    boolean Alterar(int id, T animal);
+    boolean Inserir(Entity animal);
+
+    boolean Alterar(int id, Entity animal);
 
     boolean Excluir(int id);
 

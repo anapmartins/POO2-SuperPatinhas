@@ -1,9 +1,11 @@
 package superPatinhas.DAOs;
 
+import superPatinhas.Interfaces.IProjetoSuperPatinhasDAO;
+
 import java.util.Dictionary;
 import java.util.Hashtable;
 
-public class ProjetoSuperPatinhasDAO{
+public class ProjetoSuperPatinhasDAO implements IProjetoSuperPatinhasDAO {
     int lastId = 0;
     public Dictionary<Integer, Entity> db = null;
     public ProjetoSuperPatinhasDAO(){
