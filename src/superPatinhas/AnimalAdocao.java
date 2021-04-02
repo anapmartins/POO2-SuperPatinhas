@@ -9,7 +9,6 @@ import superPatinhas.DAOs.Entity;
  */
 public class AnimalAdocao extends Entity {
 
-    private Integer Id = -1;
     private String linkRedeSocial;
     private String adotadoAnteriormente;
     private String ongPerternce;

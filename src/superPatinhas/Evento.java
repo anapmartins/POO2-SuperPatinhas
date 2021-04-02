@@ -6,7 +6,6 @@ import java.util.Date;
 
 public class Evento  extends Entity {
 
-    private Integer Id = -1;
     private Date data;
     private Endereco local;
     private String descricao;
