@@ -17,8 +17,6 @@ public class Utils {
         BigDecimal actualRandomDec = randFromDouble.multiply(max);
         actualRandomDec = actualRandomDec
                 .setScale(2, RoundingMode.DOWN);
-        System.out.println(actualRandomDec);
-
         return actualRandomDec;
     }
     public static Date randomDate() {
