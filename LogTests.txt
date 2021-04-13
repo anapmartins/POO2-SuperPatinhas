@@ -1,0 +1,223 @@
+
+##### INICIO TesteAdocaoDAO #####
+
+Criando classes necessárias...
+
+Repositorio Inicial: 
+{}
+
+Inserindo dados... 
+
+Repositorio Após Inserção: 
+{4=superPatinhas.Adocao@1ddc4ec2, 3=superPatinhas.Adocao@133314b, 2=superPatinhas.Adocao@b1bc7ed, 1=superPatinhas.Adocao@7cd84586}
+
+Alterando dados... 
+
+Repositorio Após Alteração: 
+{4=superPatinhas.Adocao@30dae81, 3=superPatinhas.Adocao@1b2c6ec2, 2=superPatinhas.Adocao@4edde6e5, 1=superPatinhas.Adocao@7cd84586}
+
+Excluindo dados... 
+
+Repositorio Após Exclusão: 
+{}
+
+##### FIM TesteAdocaoDAO #####
+
+##### INICIO TesteAjudaFinanceiraDAO #####
+
+Criando classes necessárias...
+19518.24
+76428.54
+10025.54
+65842.87
+32810.76
+33300.93
+27067.33
+
+Repositorio Inicial: 
+{}
+
+Inserindo dados... 
+
+Repositorio Após Inserção: 
+{8=superPatinhas.AjudaFinanceira@6f539caf, 7=superPatinhas.AjudaFinanceira@79fc0f2f, 6=superPatinhas.AjudaFinanceira@50040f0c, 5=superPatinhas.AjudaFinanceira@2dda6444}
+
+Alterando dados... 
+
+Repositorio Após Alteração: 
+{8=superPatinhas.AjudaFinanceira@5e9f23b4, 7=superPatinhas.AjudaFinanceira@4783da3f, 6=superPatinhas.AjudaFinanceira@378fd1ac, 5=superPatinhas.AjudaFinanceira@2dda6444}
+
+Excluindo dados... 
+
+Repositorio Após Exclusão: 
+{}
+
+##### FIM TesteAjudaFinanceiraDAO #####
+
+##### INICIO TesteAnimalAdocaoDAO #####
+
+Criando classes necessárias...
+
+Repositorio Inicial: 
+{}
+
+Inserindo dados... 
+
+Repositorio Após Inserção: 
+{10=superPatinhas.AnimalAdocao@6e2c634b, 9=superPatinhas.AnimalAdocao@37a71e93, 12=superPatinhas.AnimalAdocao@7e6cbb7a, 11=superPatinhas.AnimalAdocao@7c3df479}
+
+Alterando dados... 
+
+Repositorio Após Alteração: 
+{}
+
+Excluindo dados... 
+
+Repositorio Após Exclusão: 
+{}
+
+##### FIM TesteAnimalAdocaoDAO #####
+
+##### INICIO TesteAnimalCatalogadoDAO #####
+
+Criando classes necessárias...
+
+Repositorio Inicial: 
+{}
+
+Inserindo dados... 
+
+Repositorio Após Inserção: 
+{16=superPatinhas.AnimalCatalogado@6576fe71, 15=superPatinhas.AnimalCatalogado@76fb509a, 14=superPatinhas.AnimalCatalogado@300ffa5d, 13=superPatinhas.AnimalCatalogado@1f17ae12}
+
+Alterando dados... 
+
+Repositorio Após Alteração: 
+{16=superPatinhas.AnimalCatalogado@4d405ef7, 15=superPatinhas.AnimalCatalogado@6193b845, 14=superPatinhas.AnimalCatalogado@2e817b38, 13=superPatinhas.AnimalCatalogado@1f17ae12}
+
+Excluindo dados... 
+
+Repositorio Após Exclusão: 
+{}
+
+##### FIM TesteAnimalCatalogadoDAO #####
+
+##### INICIO TesteAnimalPerdidoDAO #####
+
+Criando classes necessárias...
+
+Repositorio Inicial: 
+{}
+
+Inserindo dados... 
+
+Repositorio Após Inserção: 
+{20=superPatinhas.AnimalPerdido@c4437c4, 19=superPatinhas.AnimalPerdido@433c675d, 18=superPatinhas.AnimalPerdido@3f91beef, 17=superPatinhas.AnimalPerdido@1a6c5a9e}
+
+Alterando dados... 
+
+Repositorio Após Alteração: 
+{20=superPatinhas.AnimalPerdido@37bba400, 19=superPatinhas.AnimalPerdido@179d3b25, 18=superPatinhas.AnimalPerdido@254989ff, 17=superPatinhas.AnimalPerdido@1a6c5a9e}
+
+Excluindo dados... 
+
+Repositorio Após Exclusão: 
+{}
+
+##### FIM TesteAnimalPerdidoDAO #####
+
+##### INICIO TesteEventoDAO #####
+
+Criando classes necessárias...
+
+Repositorio Inicial: 
+{}
+
+Inserindo dados... 
+
+Repositorio Após Inserção: 
+{21=superPatinhas.Evento@531d72ca, 24=superPatinhas.Evento@22d8cfe0, 23=superPatinhas.Evento@579bb367, 22=superPatinhas.Evento@1de0aca6}
+
+Alterando dados... 
+
+Repositorio Após Alteração: 
+{21=superPatinhas.Evento@531d72ca, 24=superPatinhas.Evento@255316f2, 23=superPatinhas.Evento@41906a77, 22=superPatinhas.Evento@4b9af9a9}
+
+Excluindo dados... 
+
+Repositorio Após Exclusão: 
+{}
+
+##### FIM TesteEventoDAO #####
+
+##### INICIO TesteOngDAO #####
+
+Criando classes necessárias...
+
+Repositorio Inicial: 
+{}
+
+Inserindo dados... 
+
+Repositorio Após Inserção: 
+{28=superPatinhas.Ong@6e5e91e4, 27=superPatinhas.Ong@2cdf8d8a, 26=superPatinhas.Ong@30946e09, 25=superPatinhas.Ong@5cb0d902}
+
+Alterando dados... 
+
+Repositorio Após Alteração: 
+{28=superPatinhas.Ong@46fbb2c1, 27=superPatinhas.Ong@1698c449, 26=superPatinhas.Ong@5ef04b5, 25=superPatinhas.Ong@5cb0d902}
+
+Excluindo dados... 
+
+Repositorio Após Exclusão: 
+{}
+
+##### FIM TesteOngDAO #####
+
+##### INICIO TestePatrocinadorDAO #####
+
+Criando classes necessárias...
+
+Repositorio Inicial: 
+{}
+
+Inserindo dados... 
+
+Repositorio Após Inserção: 
+{32=superPatinhas.Patrocinador@443b7951, 31=superPatinhas.Patrocinador@14514713, 30=superPatinhas.Patrocinador@69663380, 29=superPatinhas.Patrocinador@5b37e0d2}
+
+Alterando dados... 
+
+Repositorio Após Alteração: 
+{32=superPatinhas.Patrocinador@4459eb14, 31=superPatinhas.Patrocinador@5a2e4553, 30=superPatinhas.Patrocinador@28c97a5, 29=superPatinhas.Patrocinador@5b37e0d2}
+
+Excluindo dados... 
+
+Repositorio Após Exclusão: 
+{}
+
+##### FIM TestePatrocinadorDAO #####
+
+##### INICIO TesteUsuarioDAO #####
+
+Criando classes necessárias...
+
+Repositorio Inicial: 
+{}
+
+Inserindo dados... 
+
+Repositorio Após Inserção: 
+{36=superPatinhas.Usuario@2328c243, 35=superPatinhas.Usuario@bebdb06, 34=superPatinhas.Usuario@7a4f0f29, 33=superPatinhas.Usuario@45283ce2}
+
+Alterando dados... 
+
+Repositorio Após Alteração: 
+{36=superPatinhas.Usuario@2077d4de, 35=superPatinhas.Usuario@7591083d, 34=superPatinhas.Usuario@77a567e1, 33=superPatinhas.Usuario@45283ce2}
+
+Excluindo dados... 
+
+Repositorio Após Exclusão: 
+{}
+
+##### FIM TesteUsuarioDAO #####
